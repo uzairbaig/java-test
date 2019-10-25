@@ -1,24 +1,13 @@
 # Java Exercise
 
-This is a simple exercise to allow you to demostrate your software engineering skillset. It's completly up to you how long you give yourself, stop when you're happy with the quality of your work, but we don't expect it to take too long.
+I have written this program using Spring boot and Maven.
 
-## Instructions
-  1. Please fork this repository and work on your fork.
-     _https://help.github.com/en/articles/fork-a-repo_
-  2. Commit changes frequently so that we can review your progression with you later.
-     _https://crealytics.com/blog/5-reasons-keeping-git-commits-small/_
-  3. You should use a recognised build tool, e.g. _gradle_, _maven_...
-  4. We are currently using [open JDK 8u181](https://cdn.azul.com/zulu/bin/zulu8.31.0.1-jdk8.0.181-win_x64.msi). But please use the JDK you think is most appropriate to demonstrate your skillset. 
-  5. We don't expect 100% code coverage, we expect well tested code.
-     _https://medium.com/@nicklee1/why-test-code-coverage-targets-are-a-bad-idea-1b9b8ef711ef_
-  6. Any other tools or libraries used must be freely available. Any third-party jars must be accessible via [maven central](https://mvnrepository.com/repos/central).
-  7. The specification is below.
-  
-## Specification
+To run the program you need to build it using maven and then just run the jars with parameters.
 
-A local shop, Henry’s Grocery, has asked you to author an IT solution for them to price up a basket of shopping for their customers.
+mvn clean verify
 
-Henry’s Grocery, currently only stocks four items and has two promotions. These are as follows:
+java -jar target/java-test-1.0-SNAPSHOT.jar apples apples apples apples apples apples milk 5
+
 
 ### Stock Items
         
@@ -33,7 +22,7 @@ Henry’s Grocery, currently only stocks four items and has two promotions. Thes
  
 | **the offer**| **valid from** | **valid to** | 
 | :---     | :---: | :---: |    
-| Buy 2 tins of soup and get a loaf of bread half price | yesterday | for 7 days |
+| Buy 2 tins of soup and get a loaf of bread half cost | yesterday | for 7 days |
 | Apples have a 10% discount | from 3 days hence | until the end of the following month |
 
 ### Inputs
